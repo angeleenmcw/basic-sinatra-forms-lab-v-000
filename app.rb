@@ -7,8 +7,13 @@ get '/newteam' do
 end
 
 post '/team' do
-  @name = params['name']
-  @coach = params['coach']
+  @name = params["name"]
+  @coach = params["coach"]
+  @pg = params["pg"]
+  @sg = params["sg"]
+  @pf = params["pf"]
+  @sf = params["sf"]
+  @c = params["c"]
   erb :team
 end
 end
